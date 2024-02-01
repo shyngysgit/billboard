@@ -1,0 +1,461 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	.header {
+		background: #C3C9D4;
+		height: 50px;
+	}
+
+	.header-center {
+		background: #C3C9D4;
+		height: 50px;
+		width: 680px;
+		border: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+
+	.box-logo {
+		background: #C3C9D4;
+		height: 49px;
+		width: 150;
+	}
+
+	.box-links {
+		background: #C3C9D4;
+		height: 49px;
+		width: 380;
+		display: flex;
+	}
+
+	.box-buttons {
+		background: #C3C9D4;
+		height: 49px;
+		width: 150;
+	}
+
+	.charts_conatiner {
+		background: white;
+		height: 980px;
+		width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.charts-sort {
+		background: white;
+		height: 60px;
+		width: 680px;
+	}
+
+	.charts-up {
+		background: linear-gradient(90deg, rgba(35,154,179,1) 9%, rgba(40,40,145,1) 50%, rgba(2,2,24,1) 99%);
+		height: 120px;
+		width: 680px;
+		margin-top: 10px;
+		display: flex;
+	}
+
+	.charts-new {
+		background: linear-gradient(90deg, rgba(241,120,131,1) 9%, rgba(176,47,55,1) 44%, rgba(18,0,1,1) 100%);
+		height: 120px;
+		width: 680px;
+		margin-top: 10px;
+		display: flex;
+	}
+
+	.charts-down {
+		background: linear-gradient(90deg, rgba(126,19,193,1) 0%, rgba(206,11,215,1) 48%, rgba(94,10,92,1) 100%);
+		height: 120px;
+		width: 680px;
+		margin-top: 10px;
+		display: flex;		
+	}
+
+	.charts-rank {
+		height: 120px;
+		width: 90px;
+		text-align: center;
+		display: table;
+	}
+
+	.charts-info {
+		height: 120px;
+		width: 350px;
+		display: table;
+	}
+
+	.charts-button {
+		height: 120px;
+		width: 130px;
+		text-align: center;
+		display: table;
+	}
+
+	.charts-img {
+		height: 120px;
+		width: 110px;
+		text-align: center;
+		display: table;
+	}
+
+	.number {
+		font-weight: bold;
+		font-family: Arial Black;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+	.up_icon {
+		color: #2aff0d;
+		font-weight: bold;
+		font-family: Arial Black;
+		margin-top: 5px;
+	}
+
+	.up_new {
+		color: #060faa;
+		font-weight: bold;
+		font-family: Arial Black;
+		margin-top: 5px;
+	}
+
+	.up_down {
+		color: #ffe957;
+		font-weight: bold;
+		font-family: Arial Black;
+		margin-top: 5px;
+	}
+
+	.shorts {
+		color: white;
+		margin-left: 30px;
+		font-weight: bold;
+		font-family: Arial;
+	}
+
+	.sub {
+		width: 110px;
+		height: 35px;
+		background-color: #800080;
+		color: white;
+		font-weight: bold;
+		font-family: Arial Black;
+		border: none;
+		border-radius: 10px;
+		margin-top: 7px;
+		margin-left: 40px;
+	}
+
+	.ylw_button {
+		width: 100px;
+		height: 30px;
+		background-color: #FFA500;
+		color: white;
+		font-weight: bold;
+		font-family: Arial Black;
+		border: none;
+		margin-top: 18px;
+	}
+
+	.red_button {
+		width: 100px;
+		height: 30px;
+		background-color: #FF0000;
+		color: white;
+		font-weight: bold;
+		font-family: Arial Black;
+		border: none;
+		margin-top: 18px;
+		margin-left: 15px;
+	}
+
+	.green_button {
+        width: 100px;
+		height: 30px;
+		background-color: #008000;
+		color: white;
+		font-weight: bold;
+		font-family: Arial Black;
+		border: none;
+		margin-top: 18px;
+		margin-left: 15px;
+	}
+
+	.purp_button {
+		width: 100px;
+		height: 30px;
+		background-color: #800080;
+		color: white;
+		font-weight: bold;
+		font-family: Arial Black;
+		border: none;
+		margin-top: 18px;
+		margin-left: 15px;
+	}
+
+	.songimage {
+		width: 110px; 
+		margin-top: 5px;
+	}
+
+	.maintext {
+		margin-top: 25px;
+		margin-left: 10px;
+		color: #c3ff36;
+		text-shadow: 1px 2px #000;
+		font-family: Arial Black;
+		font-weight: bold;
+	}
+
+	.author {
+		margin-left: 10px;
+		color: white;
+		font-family: Arial Black;
+	}
+
+	.play {
+		margin-top: 40px;
+		margin-left: 4px;
+		border-radius: 5px;
+		height: 35px;
+		width: 120px;
+		border: 2px solid black;
+		background: #1737e8;
+		font-family: Arial;
+		font-weight: bold;
+		color: white;
+	}
+
+	.buy {
+		margin-top: 40px;
+		margin-left: 4px;
+		border-radius: 5px;
+		height: 35px;
+		width: 120px;
+		border: 2px solid black;
+		background: #07f041;
+		font-family: Arial;
+		font-weight: bold;
+		color: black;
+	}
+
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header"
+>	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.png" style="height: 41px; width: 150; margin-top: 4px;">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<p class="shorts">CHARTS</p>
+			<p class="shorts">NEWS</p>
+			<p class="shorts">VIDEO</p>
+			<p class="shorts">PHOTOS</p>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="sub">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts_conatiner">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="ylw_button">THIS WEEK</button>
+		<button class="red_button">LAST WEEK</button>
+		<button class="green_button">PEAK</button>
+		<button class="purp_button">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">1</h1>
+			<h2 class="up_icon">Up</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">Savage Love (Laxed - Siren Beat)</h3>
+			<p class="author">Jaws 685 x Jason Derulo x BTS</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="play">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img class="songimage" src="1.jpg">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">2</h1>
+			<h2 class="up_new">New</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">Dynamite</h3>
+			<p class="author">BTS</p>			
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="songimage" src="2.jpg">
+		</div>	
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">3</h1>
+			<h2 class="up_new">New</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">WAP</h3>
+			<p class="author">Cardi B featuring Megan Thee Stallion</p>			
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>			
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="songimage" src="3.jpg">			
+		</div>	
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">4</h1>
+			<h2 class="up_icon">Up</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">Mood</h3>	
+			<p class="author">24kGoldn featuring iann dior</p>					
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>			
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="songimage" src="4.jpg">			
+		</div>	
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">5</h1>
+			<h2 class="up_down">Down</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">Laugh Now Cry Later</h3>
+			<p class="author">Drake featuring Lil Durk</p>						
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>					
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="songimage" src="5.jpg">	
+		</div>	
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">6</h1>
+			<h2 class="up_new">New</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">Blinding Lights</h3>
+			<p class="author">The Weekend</p>						
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="play">Воспроизвести</button>			
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="songimage" src="6.jpg">			
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">7</h1>
+			<h2 class="up_icon">Up</h2>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h3 class="maintext">Rockstar</h3>	
+			<p class="author">DaBaby Featuring Roddy Ricch</p>					
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="play">Воспроизвести</button>			
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="songimage" src="7.jpg">			
+		</div>	
+	</div>
+</div>
+<!--  
+1.Savage Love (Laxed - Siren Beat)
+Jaws 685 x Jason Derulo x BTS
+
+2.Dynamite
+BTS
+
+3.WAP
+Cardi B featuring Megan Thee Stallion
+
+4.Mood
+24kGoldn featuring iann dior
+
+5.Laugh Now Cry Later
+Drake featuring Lil Durk
+
+6.Blinding Lights
+The Weekend
+
+7.Rockstar
+DaBaby Featuring Roddy Ricch
+-->
